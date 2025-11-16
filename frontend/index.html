@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Local Digital Circuit Simulator</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app" class="app-grid">
+    <header class="toolbar">
+      <div class="toolbar-left">
+        <button id="btn-new">New</button>
+        <button id="btn-open">Open</button>
+        <button id="btn-save" disabled>Save (disabled)</button>
+      </div>
+      <div class="toolbar-right">
+        <label class="theme-switch">Theme
+          <select id="theme-select"><option>Light</option><option>Dark</option></select>
+        </label>
+      </div>
+    </header>
+
+    <aside class="palette" id="palette">
+      <h3>Components</h3>
+      <div id="component-list"></div>
+    </aside>
+
+    <main class="canvas-area">
+      <div id="canvas-container">
+        <canvas id="circuit-canvas"></canvas>
+      </div>
+      <div id="waveform-container"></div>
+    </main>
+
+    <aside class="properties" id="properties">
+      <h3>Properties</h3>
+      <div id="props"></div>
+    </aside>
+
+    <div id="dialogs" class="dialogs"></div>
+  </div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
